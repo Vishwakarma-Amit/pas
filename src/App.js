@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Bar from './component/Navbar/Bar';
+//import Bar from './component/Navbar/Bar';
 import CreateConBusiness from './component/ConsumerBusiness/CreateConBusiness'
 import EditBusiness from './component/ConsumerBusiness/EditBusiness'
 import ViewConBusiness from './component/ConsumerBusiness/ViewConBusiness'
@@ -17,14 +17,14 @@ import Login from './component/Pages/Login'
 
 
 function App() {
+
   return (
     <Router>
-      <Bar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signin' element={<Login />} />
         <Route path='/*' element={<NotFound />} />
-        <Route path='/createbusiness' element={<CreateConBusiness />} />
+        <Route path='/createbusiness' element={<CreateConBusiness />}  />
         <Route path='/updatebusiness' element={<EditBusiness />} />
         <Route path='/viewbusiness' element={<ViewConBusiness />} />
         <Route path='/createproperty' element={<CreateProperty />} />
